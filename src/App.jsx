@@ -1,6 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import AddStoryButton from "./components/AddStoryButton";
 import StoryReel from "./components/StoryReel";
@@ -33,7 +31,11 @@ function App() {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className="bg-black min-h-screen p-7 flex flex-col min-h-screen">
+    <div className="relative min-h-screen min-h-screen p-7 flex flex-col">
+<div className="fixed inset-0 -z-10">
+      <div className="absolute inset-0 bg-[url('/assets/background.webp')] bg-cover bg-center"/>
+      <div className="absolute inset-0 bg-black/30"/>
+</div>
       <h1 className="text-5xl text-white mb-4">📸 24hr Story Feature</h1>
       <div className="flex gap-4 items-center flex flex-row p-7 rounded-2xl bg-white/90">
         <AddStoryButton onAddStory={handleAddStory} />
