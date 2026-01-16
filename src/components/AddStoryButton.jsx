@@ -29,7 +29,7 @@ export default function AddStoryButton({ onAddStory }) {
   return (
     <div>
       <CiCirclePlus
-        className="size-18 text-black cursor-pointer hover:scale-105 transition-transform duration-300"
+        className="size-18 text-white cursor-pointer hover:scale-105 transition-transform duration-300"
         onClick={handleAddClick}
       />
       <input

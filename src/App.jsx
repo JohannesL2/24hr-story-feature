@@ -37,7 +37,8 @@ function App() {
       <div className="absolute inset-0 bg-black/30"/>
 </div>
       <h1 className="text-5xl text-white mb-4">📸 24hr Story Feature</h1>
-      <div className="flex gap-4 items-center flex flex-row p-7 rounded-2xl bg-white/90">
+      <div className="flex gap-4 items-center flex flex-row p-7 rounded-3xl
+bg-white/20 backdrop-blur-xl border border-white/30 shadow-xl">
         <AddStoryButton onAddStory={handleAddStory} />
         <StoryReel
           stories={stories}
